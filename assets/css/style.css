@@ -63,8 +63,13 @@
 	background-color: #666666;
 	border-top: 8px solid #4aaaa5;
 	color: #cccccc;
-	padding-top: 10px;
+	padding-bottom: 4px;
+	padding-top: 24px;
 	text-align: center;
+}
+
+#all-pages-footer, .main-content {
+	width: 960px;
 }
 
 #all-pages-footer-text {
@@ -98,10 +103,6 @@ body {
 	display: flex;
 	flex-direction: column;
 	min-height: 99vh;
-}
-
-body, #contact-page-main-content, #home-page-main-content, #portfolio-page-main-content {
-	width: 960px;
 }
 
 #clear-just-above-main, #clear-just-below-first-para {
