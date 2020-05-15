@@ -1,152 +1,70 @@
 
-#about-link {
-	margin-left: 374px;
+#about-me-heading {
+	margin-top: 32px;
 }
 
 #about-me-heading, #contact-me-heading, #portfolio-page-heading {
 	color: #4aaaa5;
-	font-family: 'Georgia', Times, Times New Roman, serif;
-	opacity: 0.7;
-	margin-bottom: 14px;
 }
 
-#about-me-heading, #contact-me-heading {
-	padding-top: 20px;
+#about-me-heading, #name-block-text {
+	font-size: 32px;
+	font-weight: 600;
+}
+
+#about-me-heading, #name-block-text, #contact-me-heading, #portfolio-page-heading {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+#about-me-heading-row {
+	margin-bottom: 1%;
 }
 
 #about-me-image {
-	margin-right: 16px;
-	max-height: 300px;
+	padding: 0!important;
+	width: 100%;
 }
 
-#about-me-image, #all-pages-name-block {
-	float: left;
+#about-me-inner-container {
+	background: white;
+	border: 1px solid #aaa;
 }
 
-#about-me-image-container, #estes-nightscapes-cell, #flixster-cell {
-	display: inline-block;
-	position: relative;
+#about-me-outer-container {
+	background-image: url("../images/ConcreteWallBackground-lighter.jpg");
+	padding-bottom: 30%;
+	padding-top: 3%;
 }
 
-#about-me-image-container #about-me-tooltip-text {
-	bottom: 10px;
-	left: 28px;
-}
-
-#about-me-image-container #about-me-tooltip-text, #estes-nightscapes-cell #estes-nightscapes-tooltip-text, #flixster-cell #flixster-tooltip-text {
-	color: white;
-	opacity: 0.9;
-	padding: 4px;
-	padding-left: 8px;
-	padding-right: 8px;
-	position: absolute;
-	text-align: center;
-	visibility: hidden;
-	z-index: 1;
-}
-
-#about-me-image-container:hover #about-me-tooltip-text, #estes-nightscapes-cell:hover #estes-nightscapes-tooltip-text, #flixster-cell:hover #flixster-tooltip-text {
-	visibility: visible;
-}
-
-#about-me-tooltip-text, #all-pages-footer, .all-pages-nav-link, .contact-form-label, #estes-nightscapes-caption, #estes-nightscapes-tooltip-text, #flixster-caption, #flixster-tooltip-text {
+#about-me-text, #all-pages-footer-text, #experience-bullets-header, #experience-bullets-list, .responsive-text {
 	font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
-	font-size: 12px;
-}
-
-#about-me-text-container {
-	float: right;
-	width: 480px;
 }
 
 #all-pages-footer {
 	background-color: #666666;
 	border-top: 8px solid #4aaaa5;
 	color: #cccccc;
-	padding-bottom: 4px;
-	padding-top: 24px;
-	text-align: center;
-}
-
-#all-pages-footer, .main-content {
-	width: 960px;
-}
-
-#all-pages-footer-text {
-	padding-bottom: 3px;
-}
-
-#all-pages-name-block {
-	color: white;
-	font-size: 26px;
-	margin-bottom: 0;
-	margin-left: 100px;
-	padding-top: 16px;
-	padding-bottom: 16px;
-	text-align: center;
-	width: 196px;
-}
-
-#all-pages-nav {
-	padding-top: 39px;
-}
-
-.all-pages-nav-link {
-	color: #aaa;
 	font-size: 12px;
-	padding-left: 12px;
-	padding-right: 12px;
-	text-decoration: none;
+	text-align: center;
 }
 
-body {
-	display: flex;
-	flex-direction: column;
-	min-height: 99vh;
+#body-level-container {
+	border: 1px solid black;
+	margin: 0;
+	padding: 0;
 }
 
-#clear-just-above-main, #clear-just-below-first-para {
+.clear-both {
 	clear: both;
 }
 
-#contact-form-email-input, #contact-form-name-input, #contact-form-msg-input {
-	margin-bottom: 12px;
-	margin-top: 4px;
+.contact-form-label, #estes-nightscapes-caption, #estes-nightscapes-tooltip-text, #flixster-caption, #flixster-tooltip-text {
+	font-size: 13px;
 }
 
-#contact-form-email-input, #contact-form-name-input {
-	width: 723px;
-}
-
-.contact-form-label {
-	margin-left: 1px;
-}
-
-#contact-form-msg-input {
-	width: 721px;
-}
-
-#contact-link, #portfolio-link {
-	border-left: solid;
-	border-width: 1px;
-}
-
-#contact-page-article, #home-page-article, #portfolio-page-article {
+#contact-page-article, #portfolio-page-article {
 	background-color: #ffffff;
 	border-color: #dddddd;
-	height: 400px;
-	margin-bottom: 54px;
-	margin-left: 100px;
-	margin-right: 100px;
-	margin-top: 24px;
-	padding-left: 16px;
-	padding-right: 16px;
-}
-
-#contact-page-main-content, #home-page-main-content {
-	background: lightgray;
-	flex: 1;
-	height: 480px;
 }
 
 #estes-nightscapes-caption, #flixster-caption {
@@ -156,128 +74,127 @@ body {
 	text-align: center;
 }
 
-#estes-nightscapes-caption {
-	margin-left: 28px;
-	top: 45px;
-	width: 236px;
-}
-
-#estes-nightscapes-caption, #flixster-caption, #all-pages-name-block, #portfolio-rule-just-below-main, #rule-just-below-main {
+#estes-nightscapes-caption, #flixster-caption, #name-block-text {
 	background-color: #4aaaa5;
 }
 
 #estes-nightscapes-cell #estes-nightscapes-tooltip-text {
-	bottom: 16px;
-	left: 66px;
 	opacity: 0.5;
 }
 
-#experience-bullets-header {
-	margin-bottom: 0;
-	margin-right: 236px;
-	margin-top: 6px;
+#estes-nightscapes-cell #estes-nightscapes-tooltip-text, #flixster-cell #flixster-tooltip-text {
+	color: white;
+	opacity: 0.9;
+	position: absolute;
+	text-align: center;
+	visibility: hidden;
+	z-index: 1;
 }
 
-#experience-bullets-header, #experience-bullets-list {
-	float: right;
-}
-
-#experience-bullets-header, #experience-bullets-list, #home-page-article-first-para {
-	font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
-	font-size: 15px;
-}
-
-#experience-bullets-list {
-	margin-right: 346px;
-	margin-top: 8px;
+#estes-nightscapes-cell:hover #estes-nightscapes-tooltip-text, #flixster-cell:hover #flixster-tooltip-text {
+	visibility: visible;
 }
 
 #firs-reaching-figure, #framus-on-stage-figure {
 	margin: 0;
 }
 
-#flixster-caption {
-	bottom: 48px;
-	margin-left: 22px;
-	width: 383px;
+#footer-container {
+	padding-bottom: 36px;
+	padding-top: 36px;
 }
 
-#flixster-cell #flixster-tooltip-text {
-	top: 8px;
-	left: 134px;
+@media (min-width: 768px) {
+	#name-block-text {
+		max-width: 232px;
+	}
+
+	#about-me-image {
+		width: 48%;
+	}
+
+	#about-me-outer-container {
+		padding-bottom: 67%;
+	}
+
+	#nav-links-col {
+		max-width: 260px;
+	}
+	
+	#nav-links-subrow {
+		margin-top: 7%;
+	}
 }
 
-#home-page-article-first-para {
-	float: right;
-	margin-bottom: 12px;
-	margin-right: 26px;
-	margin-top: 10px;
-	max-width: 456px;
+@media (min-width: 980px) {
+	#about-me-heading, #name-block-text {
+		font-weight: 600;
+	}
+
+	#about-me-inner-container {
+		max-width: 65%;
+	}
+
+	#about-me-outer-container {
+		padding-bottom: 50%;
+		padding-left: 49px;
+	}
+
+	#name-block-nav-container {
+		padding-left: 34px;
+	}
+
+	#nav-links-col {
+		margin-left: 5%!important;
+		margin-top: 4px;
+		max-width: 288px;
+	}
 }
 
-#portfolio-page-article {
-	height: 460px;
+#name-block-nav-container {
+	border-bottom: 2px solid lightgray;
 }
 
-#portfolio-page-heading {
-	padding-top: 16px;
-}
-
-.portfolio-page-left-cell {
-	margin-left: 28px;
-	margin-right: 22px;
-}
-
-#portfolio-page-main-content {
-	background: lightgray;
-	flex: 1;
-	height: 500px;
-}
-
-.portfolio-page-right-cell {
-	margin-left: 22px;
-}
-
-#portfolio-page-table {
-	margin-top: 16px;
-}
-
-.portfolio-page-table-cell {
-	flex: 1 1 auto;
-}
-
-#portfolio-page-table-row {
-	display: flex;
-	flex-direction: row;
-	min-width: 100%;
-}
-
-#portfolio-rule-just-below-main {
-	border: none;
-	margin-top: 18px;
-	height: 5px;
-}
-
-#rule-just-below-main {
-	border: none;
+#name-block-text {
+	color: white;
 	margin: 0;
-	height: 5px;
+	padding: 16px;
+	text-align: center;
 }
 
-#rule-at-top-of-main {
+.nav-link {
+	color: #aaa;
+	font-size: 15px;
+	padding-left: 0;
+	padding-right: 0;
+	text-align: center;
+	text-decoration: none;
+}
+
+#nav-links-subrow {
+	line-height: 0;
+	padding-bottom: 3%;
+	padding-top: 3%;
+}
+
+#portfolio-link {
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+}
+
+.responsive-text {
+	font-size: 13px;
+}
+
+#rule-below-nav-row {
+	border: none;
 	color: #cccccc;
+	height: 4px;
 	margin: 0;
 	opacity: 0.67;
 }
 
-#rule-just-below-about-me {
-	margin-bottom: 16px;
-}
-
-#rule-just-below-contact-me {
-	margin-bottom: 12px;
-}
-
-#rule-just-below-portfolio-heading {
-	opacity: 0.2;
+#rule-below-about-me-hr {
+	border: 1px solid lightgrey;
+	opacity: 0.75;
 }

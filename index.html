@@ -5,40 +5,59 @@
 		<title>Steve Tice</title>
 		<meta name="description" content="Web Site Portfolio">
 		<meta name="author" content="stic6021">
-		<link rel="stylesheet" href="assets/css/reset.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="assets/css/style.css">
 	</head>
 	<body>
-		<div class="all-pages-top-row">
-			<h1 id="all-pages-name-block">Steve Tice</h1>
-			<nav id="all-pages-nav">
-				<a class="all-pages-nav-link" id="about-link" href="./index.html" title="Home page">About</a>
-				<a class="all-pages-nav-link" id="portfolio-link" href="./portfolio.html" title="Portfolio page">Portfolio</a>
-				<a class="all-pages-nav-link" id="contact-link" href="./contact.html" title="Contact page">Contact</a>
-			</nav>
+		<div class="container-fluid" id="body-level-container">
+			<div class="container-md" id="name-block-nav-container">
+				<div class="ml-md-0 row" id="name-block-nav-row">
+					<div class="col-12 col-md-5 ml-md-0" id="name-block-col">
+						<div id="name-block-text">Steve Tice</div>
+					</div>
+					<div class="col-md-2 mr-md-2"></div>
+					<div class="col-12 col-md-5 ml-md-4" id="nav-links-col">
+						<div class="row" id="nav-links-subrow">
+							<div class="col-4 col-md-1"></div>
+							<a class="col nav-link pr-1" id="about-link" href="./index.html" title="Home page">About</a>
+							<a class="col nav-link px-2" id="portfolio-link" href="./portfolio.html" title="Portfolio page">Portfolio</a>
+							<a class="col nav-link pl-1" id="contact-link" href="./contact.html" title="Contact page">Contact</a>
+							<div class="col-4"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid" id="about-me-outer-container">
+				<div class="container-fluid ml-md-0 ml-lg-5" id="about-me-inner-container">
+					<div class="row" id="about-me-heading-row">
+						<div class="col-12" id="about-me-heading-col">
+							<h2 id="about-me-heading">About Me</h2>
+							<hr id="rule-below-about-me-hr">
+						</div>
+					</div>
+					<div class="row" id="about-me-content-row">
+						<div class="col-12" id="about-me-image-text-col">
+							<img class="float-left mb-4 mr-4" id="about-me-image" src="assets/images/profile-square.jpg" alt="My profile picture, at a venue in South Austin.">
+							<p class="responsive-text" id="about-me-extra-text"><i>I've added an extra paragraph here to confirm and demonstrate that text wraps around the right side and below the image. If the viewport is fewer than 768 pixels wide, or all text within the white box is no taller than the image, then the text should appear to occupy its own column (without a jag to the left). If the viewport is at least 768 pixels wide and the text is taller than the image, then the text should be rendered to the right of the image and overflow to a full-width column below the image.</i></p>
+							<p class="responsive-text" id="about-me-text">My life, both personal and professional, has been a mostly continuous flow of good fortune. I was born with aptitudes in mathematics, music and things mechanical. As a NJ teenager, I fortuitously connected with a generous electrical engineer at Bell Labs that introduced me to computer programming. That introduction was sufficient for me to know what I wanted to study and do professionally. Looking back, it's clear that many of us at 17 years old were effectively forced to pick a field of study without knowing what we wanted to become. I was very lucky to feel sure I wanted to be a software engineer.</p>
+							<p class="responsive-text" id="experience-bullets-header">My professional experience includes:</p>
+							<ul id="experience-bullets-list">
+								<li class="experience-bullets-item responsive-text">Linux</li>
+								<li class="experience-bullets-item responsive-text">Ruby on Rails</li>
+								<li class="experience-bullets-item responsive-text">Java</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer class="footer mt-auto" id="all-pages-footer">
+				<div class="container-fluid" id="footer-container">
+					<span id="all-pages-footer-text">&copy; Copyright 2020 Steve Tice</span>
+				</div>
+			</footer>
 		</div>
-		<main class="main-content" id="home-page-main-content">
-			<hr id="rule-at-top-of-main">
-			<article id="home-page-article">
-				<h2 id="about-me-heading">About Me</h2>
-				<hr id="rule-just-below-about-me">
-				<div id="about-me-image-container">
-					<img id="about-me-image" src="assets/images/profile.jpg" alt="My profile picture, at a venue in South Austin.">
-					<span id="about-me-tooltip-text">Having fun at my other job</span>
-				</div>
-				<div id="about-me-text-container">
-					<p id="home-page-article-first-para">My life, both personal and professional, has been a mostly continuous flow of good fortune. I was born with aptitudes in mathematics, music and things mechanical. As a NJ teenager, I fortuitously connected with a generous electrical engineer at Bell Labs that introduced me to computer programming. That introduction was sufficient for me to know what I wanted to study and do professionally. Looking back, it's clear that many of us at 17 years old were effectively forced to pick a field of study without knowing what we wanted to become. I was very lucky to feel sure I wanted to be a software engineer.</p>
-					<p id="experience-bullets-header">My professional experience includes:</p>
-					<ul id="experience-bullets-list">
-						<li class="experience-bullets-item">Linux</li>
-						<li class="experience-bullets-item">Ruby on Rails</li>
-						<li class="experience-bullets-item">Java</li>
-					</ul>
-				</div>
-			</article>
-		</main>
-		<footer id="all-pages-footer">
-			<p id="all-pages-footer-text">Copyright (c) 2020 Steve Tice</p>
-		</footer>
 	</body>
 </html>
