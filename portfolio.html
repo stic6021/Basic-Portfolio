@@ -2,54 +2,81 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Portfolio of Steve Tice</title>
+		<title>Steve Tice's Portfolio</title>
 		<meta name="description" content="Web Site Portfolio - portfolio page">
 		<meta name="author" content="stic6021">
-		<link rel="stylesheet" href="assets/css/reset.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="assets/css/style.css">
 	</head>
-	<body>
-		<div class="all-pages-top-row">
-			<h1 id="all-pages-name-block">Steve Tice</h1>
-			<nav id="all-pages-nav">
-				<a class="all-pages-nav-link" id="about-link" href="./index.html" title="Home page">About</a>
-				<a class="all-pages-nav-link" id="portfolio-link" href="./portfolio.html" title="Portfolio page">Portfolio</a>
-				<a class="all-pages-nav-link" id="contact-link" href="./contact.html" title="Contact page">Contact</a>
-			</nav>
+	<body id="full-body-container">
+		<div class="container-fluid px-0" id="block-container">
+			<div class="row m-0 p-0 pl-md-3" id="top-block-row">
+				<div class="col-12 col-md-5 py-4 text-center" id="name-block-col">
+					<b id="name-block-text">Steve Tice</b>
+				</div>
+				<div class="col-12 col-md-3"></div>
+				<div class="col-12 col-md-4" id="nav-links-col">
+					<div class="row py-4 py-md-5 text-center" id="nav-links-row">
+						<div class="col px-0 text-center">
+							<a class="gray-text responsive-font-size" id="about-link" href="./index.html" title="Home page">About</a>
+						</div>
+						<div class="col px-0 text-center">
+							<a class="border-left border-right gray-text px-2 px-sm-3 px-md-4 responsive-font-size" id="portfolio-link" href="./portfolio.html" title="Portfolio page">Portfolio</a>
+						</div>
+						<div class="col px-0 text-center">
+							<a class="gray-text responsive-font-size" id="contact-link" href="./contact.html" title="Contact page">Contact</a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-		<main class="main-content" id="portfolio-page-main-content">
-			<hr id="rule-at-top-of-main">
-			<article id="portfolio-page-article">
-				<h2 id="portfolio-page-heading">Portfolio</h2>
-				<hr id="rule-just-below-portfolio-heading">
-				<table id="portfolio-page-table">
-					<tbody id="portfolio-page-table-body">
-						<tr class="portfolio-page-table-row">
-							<td class="portfolio-page-table-cell" id="estes-nightscapes-cell">
-								<a id=#estes-nightscapes-anchor href="http://estesnightscapes.com/" target="_blank" rel="noreferrer noopener">
-									<figure id="firs-reaching-figure">
-										<figcaption id="estes-nightscapes-caption">Estes Nightscapes</figcaption>
-										<img class="portfolio-page-left-cell" src="assets/images/FirsReaching-MedSize.jpg" alt="Firs pointing out the Milky Way">
-									</figure>
-								</a>
-								<span id="estes-nightscapes-tooltip-text">Night sky photography site</span>
-							</td>
-							<td class="portfolio-page-table-cell" id="flixster-cell">
-								<a id=#flixster-anchor href="https://flixster-steve-tice.herokuapp.com/" target="_blank" rel="noreferrer noopener">
-									<figure id="framus-on-stage-figure">
-										<img class="portfolio-page-right-cell" src="assets/images/FramusOnStage.jpg" alt="Upright bass ready to do business">
-										<figcaption id="flixster-caption">Flixster</figcaption>
-									</figure>
-								</a>
-								<span id="flixster-tooltip-text">Learn to play upright bass</span>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</article>
-		</main>
-		<footer id="all-pages-footer">
-			<p id="all-pages-footer-text">Copyright (c) 2020 Steve Tice</p>
+		<div class="container-fluid pl-md-3" id="portfolio-outer-container">
+			<div class="container-fluid ml-md-0 pb-3 pb-md-4 w-100" id="portfolio-inner-container">
+				<article id="portfolio-article">
+					<h2 class="m-0 pt-4" id="portfolio-heading"><b>Portfolio</b></h2>
+					<hr class="mb-4 my-3" id="rule-below-portfolio-hr">
+					<div class="row m-0 p-0" id="portfolio-image-row">
+						<div class="col-12 col-md-6 m-0 mb-4 mb-md-0 p-0 pr-0 pr-md-2 text-center text-md-left" id="estes-nightscapes-col">
+							<figure class="figure m-0 p-0" id="estes-nightscapes-figure">
+								<div class="container-fluid m-0 p-0 position-relative" id="estes-nightscapes-container">
+									<a id="#estes-nightscapes-anchor" href="http://estesnightscapes.com/" target="_blank" rel="noreferrer noopener">
+										<img class="figure-img img-fluid m-0 p-0 w-100" id="estes-nightscapes-image" src="assets/images/FirsReaching.jpg" alt="Firs pointing out the Milky Way">
+										<div class="container-fluid">
+											<div class="row position-absolute text-center w-100" id="estes-nightscapes-caption-row">
+												<div class="col align-middle" id="estes-nightscapes-caption">Estes Nightscapes</div>
+											</div>
+										</div>
+										<span class="position-absolute text-center w-100" id="estes-nightscapes-tooltip-text">Night sky photography site</span>
+									</a>
+								</div>
+							</figure>
+						</div>
+						<div class="col-12 col-md-6 m-0 mb-2 mb-md-0 p-0 pl-0 pl-md-2 text-center text-md-right" id="flixster-col">
+							<figure class="figure m-0 p-0" id="flixster-figure">
+								<div class="container-fluid m-0 p-0 position-relative" id="flixster-container">
+									<a id="flixster-anchor" href="http://flixster-steve-tice.herokuapp.com/" target="_blank" rel="noreferrer noopener">
+										<img class="figure-img img-fluid m-0 p-0 w-100" id="flixster-image" src="assets/images/FramusOnStage.jpg" alt="Upright bass ready to do business">
+										<div class="container-fluid">
+											<div class="row position-absolute text-center w-100" id="flixster-caption-row">
+												<div class="col align-middle" id="flixster-caption">Flixster</div>
+											</div>
+										</div>
+										<span class="position-absolute text-center w-100" id="flixster-tooltip-text">Learn to play upright bass</span>
+									</a>
+								</div>
+							</figure>
+						</div>
+					</div>
+				</article>
+			</div>
+		</div>
+		<footer class="footer mt-auto text-center" id="all-pages-footer">
+			<div class="container-fluid" id="footer-container">
+				<span class="responsive-font-size" id="footer-text">&copy; Copyright 2020 Steve Tice</span>
+			</div>
 		</footer>
 	</body>
 </html>
