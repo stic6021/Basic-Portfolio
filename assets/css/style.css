@@ -1,200 +1,161 @@
 
-#about-me-heading {
-	margin-top: 32px;
-}
-
-#about-me-heading, #contact-me-heading, #portfolio-page-heading {
+#about-me-heading, #contact-me-heading, #portfolio-heading {
 	color: #4aaaa5;
 }
 
-#about-me-heading, #name-block-text {
-	font-size: 32px;
-	font-weight: 600;
-}
-
-#about-me-heading, #name-block-text, #contact-me-heading, #portfolio-page-heading {
+#about-me-heading, #contact-me-heading, #name-block-text, #portfolio-heading {
 	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-size: 32px;
 }
 
-#about-me-heading-row {
-	margin-bottom: 1%;
-}
-
-#about-me-image {
-	padding: 0!important;
-	width: 100%;
-}
-
-#about-me-inner-container {
+#about-me-inner-container, #contact-form-inner-container, #portfolio-inner-container {
 	background: white;
 	border: 1px solid #aaa;
 }
 
-#about-me-outer-container {
+#about-me-outer-container, #contact-form-outer-container, #portfolio-outer-container {
 	background-image: url("../images/ConcreteWallBackground-lighter.jpg");
+	border-top: 3px solid lightgray;
 	padding-bottom: 30%;
 	padding-top: 3%;
 }
 
-#about-me-text, #all-pages-footer-text, #experience-bullets-header, #experience-bullets-list, .responsive-text {
-	font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
-}
-
 #all-pages-footer {
 	background-color: #666666;
-	border-top: 8px solid #4aaaa5;
+	border-top: 7px solid #4aaaa5;
 	color: #cccccc;
-	font-size: 12px;
+}
+
+.contact-form-label {
+	color: #8c8c8c;
+	font-size: 15px;
+	font-weight: 500;
 	text-align: center;
 }
 
-#body-level-container {
-	border: 1px solid black;
-	margin: 0;
-	padding: 0;
+#contact-form-submit-button {
+	border: none;
+	border-radius: 0;
 }
 
-.clear-both {
-	clear: both;
+#contact-form-submit-button, #estes-nightscapes-caption, #flixster-caption, #name-block-col {
+	background-color: #4aaaa5;
 }
 
-.contact-form-label, #estes-nightscapes-caption, #estes-nightscapes-tooltip-text, #flixster-caption, #flixster-tooltip-text {
-	font-size: 13px;
-}
-
-#contact-page-article, #portfolio-page-article {
-	background-color: #ffffff;
+#contact-page-article, #portfolio-article {
+	background-color: white;
 	border-color: #dddddd;
 }
 
 #estes-nightscapes-caption, #flixster-caption {
 	color: white;
-	opacity: 0.8;
-	position: absolute;
-	text-align: center;
+	font-size: 12px;
+	left: 0;
+	opacity: 0.75;
 }
 
-#estes-nightscapes-caption, #flixster-caption, #name-block-text {
-	background-color: #4aaaa5;
+#estes-nightscapes-caption-row {
+	top: 8%;
 }
 
-#estes-nightscapes-cell #estes-nightscapes-tooltip-text {
-	opacity: 0.5;
+#estes-nightscapes-caption-row, #flixster-caption-row {
+	line-height: 3.5;
 }
 
-#estes-nightscapes-cell #estes-nightscapes-tooltip-text, #flixster-cell #flixster-tooltip-text {
+#estes-nightscapes-container #estes-nightscapes-tooltip-text {
+	bottom: 4%;
+	left: 0;
+}
+
+#estes-nightscapes-container #estes-nightscapes-tooltip-text, #flixster-container #flixster-tooltip-text {
 	color: white;
-	opacity: 0.9;
-	position: absolute;
+	font-size: 12px;
+	opacity: 0.6;
 	text-align: center;
 	visibility: hidden;
 	z-index: 1;
 }
 
-#estes-nightscapes-cell:hover #estes-nightscapes-tooltip-text, #flixster-cell:hover #flixster-tooltip-text {
+#estes-nightscapes-container:hover #estes-nightscapes-tooltip-text, #flixster-container:hover #flixster-tooltip-text {
 	visibility: visible;
 }
 
-#firs-reaching-figure, #framus-on-stage-figure {
-	margin: 0;
+#experience-bullets-header, #experience-bullets-list, #footer-text, .responsive-text {
+	font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
 }
 
-#footer-container {
-	padding-bottom: 36px;
-	padding-top: 36px;
+#flixster-caption-row {
+	bottom: 0;
+}
+
+#flixster-container #flixster-tooltip-text {
+	top: 26%;
+	left: 0;
+}
+
+#footer-text {
+	line-height: 6;
+}
+
+#full-body-container {
+	border: 1px solid black;
+}
+
+.gray-text {
+	color: #aaa;
 }
 
 @media (min-width: 768px) {
-	#name-block-text {
-		max-width: 232px;
-	}
-
 	#about-me-image {
-		width: 48%;
+		width: 48%!important;
 	}
 
-	#about-me-outer-container {
-		padding-bottom: 67%;
-	}
-
-	#nav-links-col {
-		max-width: 260px;
-	}
-	
-	#nav-links-subrow {
-		margin-top: 7%;
+	#nav-links-row {
+		line-height: 0.5!important;
 	}
 }
 
 @media (min-width: 980px) {
-	#about-me-heading, #name-block-text {
-		font-weight: 600;
+	#about-me-image {
+		width: 35%!important;
 	}
 
-	#about-me-inner-container {
-		max-width: 65%;
+	#about-me-inner-container, #contact-form-inner-container, #portfolio-inner-container {
+		max-width: 70%;
 	}
 
-	#about-me-outer-container {
-		padding-bottom: 50%;
-		padding-left: 49px;
+	#about-me-outer-container, #contact-form-outer-container, #portfolio-outer-container, #top-block-row {
+		padding-left: 5%!important;
 	}
-
-	#name-block-nav-container {
-		padding-left: 34px;
-	}
-
-	#nav-links-col {
-		margin-left: 5%!important;
-		margin-top: 4px;
-		max-width: 288px;
-	}
-}
-
-#name-block-nav-container {
-	border-bottom: 2px solid lightgray;
 }
 
 #name-block-text {
 	color: white;
-	margin: 0;
-	padding: 16px;
-	text-align: center;
 }
 
 .nav-link {
 	color: #aaa;
-	font-size: 15px;
-	padding-left: 0;
-	padding-right: 0;
-	text-align: center;
-	text-decoration: none;
 }
 
-#nav-links-subrow {
-	line-height: 0;
-	padding-bottom: 3%;
-	padding-top: 3%;
+#nav-links-col {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 44%;
 }
 
-#portfolio-link {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
+#nav-links-row {
+	line-height: 1;
 }
 
-.responsive-text {
-	font-size: 13px;
+.responsive-font-size {
+/* See https://websemantics.uk/tools/responsive-font-calculator/
+	/* 8px @ 150px increasing to 24px @ 1920px */
+	font-size: clamp(8px, calc(0.5rem + (24 - 8) * ((100vw - 240px) / (1920 - 240))), 24px);
+	/* Safari resize fix */
+	min-height: 0vw;
 }
 
-#rule-below-nav-row {
-	border: none;
-	color: #cccccc;
-	height: 4px;
-	margin: 0;
-	opacity: 0.67;
-}
-
-#rule-below-about-me-hr {
+#rule-below-about-me-hr, #rule-below-contact-hr, #rule-below-portfolio-hr {
 	border: 1px solid lightgrey;
 	opacity: 0.75;
 }

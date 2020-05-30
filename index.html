@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Steve Tice</title>
-		<meta name="description" content="Web Site Portfolio">
+		<meta name="description" content="Web Site Portfolio - about me page">
 		<meta name="author" content="stic6021">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -11,53 +11,55 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="assets/css/style.css">
 	</head>
-	<body>
-		<div class="container-fluid" id="body-level-container">
-			<div class="container-md" id="name-block-nav-container">
-				<div class="ml-md-0 row" id="name-block-nav-row">
-					<div class="col-12 col-md-5 ml-md-0" id="name-block-col">
-						<div id="name-block-text">Steve Tice</div>
-					</div>
-					<div class="col-md-2 mr-md-2"></div>
-					<div class="col-12 col-md-5 ml-md-4" id="nav-links-col">
-						<div class="row" id="nav-links-subrow">
-							<div class="col-4 col-md-1"></div>
-							<a class="col nav-link pr-1" id="about-link" href="./index.html" title="Home page">About</a>
-							<a class="col nav-link px-2" id="portfolio-link" href="./portfolio.html" title="Portfolio page">Portfolio</a>
-							<a class="col nav-link pl-1" id="contact-link" href="./contact.html" title="Contact page">Contact</a>
-							<div class="col-4"></div>
+	<body id="full-body-container">
+		<div class="container-fluid px-0" id="block-container">
+			<div class="row m-0 p-0 pl-md-3" id="top-block-row">
+				<div class="col-12 col-md-5 py-4 text-center" id="name-block-col">
+					<b id="name-block-text">Steve Tice</b>
+				</div>
+				<div class="col-12 col-md-3"></div>
+				<div class="col-12 col-md-4" id="nav-links-col">
+					<div class="row py-4 py-md-5 text-center" id="nav-links-row">
+						<div class="col px-0 text-center">
+							<a class="gray-text responsive-font-size" id="about-link" href="./index.html" title="Home page">About</a>
+						</div>
+						<div class="col px-0 text-center">
+							<a class="border-left border-right gray-text px-2 px-sm-3 px-md-4 responsive-font-size" id="portfolio-link" href="./portfolio.html" title="Portfolio page">Portfolio</a>
+						</div>
+						<div class="col px-0 text-center">
+							<a class="gray-text responsive-font-size" id="contact-link" href="./contact.html" title="Contact page">Contact</a>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="container-fluid" id="about-me-outer-container">
-				<div class="container-fluid ml-md-0 ml-lg-5" id="about-me-inner-container">
-					<div class="row" id="about-me-heading-row">
-						<div class="col-12" id="about-me-heading-col">
-							<h2 id="about-me-heading">About Me</h2>
-							<hr id="rule-below-about-me-hr">
-						</div>
-					</div>
-					<div class="row" id="about-me-content-row">
-						<div class="col-12" id="about-me-image-text-col">
-							<img class="float-left mb-4 mr-4" id="about-me-image" src="assets/images/profile-square.jpg" alt="My profile picture, at a venue in South Austin.">
-							<p class="responsive-text" id="about-me-extra-text"><i>I've added an extra paragraph here to confirm and demonstrate that text wraps around the right side and below the image. If the viewport is fewer than 768 pixels wide, or all text within the white box is no taller than the image, then the text should appear to occupy its own column (without a jag to the left). If the viewport is at least 768 pixels wide and the text is taller than the image, then the text should be rendered to the right of the image and overflow to a full-width column below the image.</i></p>
-							<p class="responsive-text" id="about-me-text">My life, both personal and professional, has been a mostly continuous flow of good fortune. I was born with aptitudes in mathematics, music and things mechanical. As a NJ teenager, I fortuitously connected with a generous electrical engineer at Bell Labs that introduced me to computer programming. That introduction was sufficient for me to know what I wanted to study and do professionally. Looking back, it's clear that many of us at 17 years old were effectively forced to pick a field of study without knowing what we wanted to become. I was very lucky to feel sure I wanted to be a software engineer.</p>
-							<p class="responsive-text" id="experience-bullets-header">My professional experience includes:</p>
-							<ul id="experience-bullets-list">
-								<li class="experience-bullets-item responsive-text">Linux</li>
-								<li class="experience-bullets-item responsive-text">Ruby on Rails</li>
-								<li class="experience-bullets-item responsive-text">Java</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-			<footer class="footer mt-auto" id="all-pages-footer">
-				<div class="container-fluid" id="footer-container">
-					<span id="all-pages-footer-text">&copy; Copyright 2020 Steve Tice</span>
-				</div>
-			</footer>
 		</div>
+		<div class="container-fluid pl-md-3" id="about-me-outer-container">
+			<div class="container-fluid ml-md-0 pb-2 w-100" id="about-me-inner-container">
+				<div class="row pb-2" id="about-me-heading-row">
+					<div class="col-12" id="about-me-heading-col">
+						<h2 class="pt-4" id="about-me-heading"><b>About Me</b></h2>
+						<hr id="rule-below-about-me-hr">
+					</div>
+				</div>
+				<div class="row" id="about-me-content-row">
+					<div class="col-12" id="about-me-image-text-col">
+						<img class="float-left mb-3 mb-md-2 mr-4 w-100" id="about-me-image" src="assets/images/profile-square.jpg" alt="My profile picture, at a venue in South Austin.">
+						<p class="responsive-font-size responsive-text" id="about-me-extra-text"><i>I've added an extra paragraph here to confirm and demonstrate that text wraps around the right side and below the image. If the viewport is fewer than 768 pixels wide, or all text within the white box is no taller than the image, then the text should appear to occupy its own column (without a jag to the left). If the viewport is at least 768 pixels wide and the text is taller than the image, then the text should be rendered to the right of the image and overflow to a full-width column below the image.</i></p>
+						<p class="responsive-font-size responsive-text" id="about-me-text">My life, both personal and professional, has been a mostly continuous flow of good fortune. I was born with aptitudes in mathematics, music and things mechanical. As a NJ teenager, I fortuitously connected with a generous electrical engineer at Bell Labs that introduced me to computer programming. That introduction was sufficient for me to know what I wanted to study and do professionally. Looking back, it's clear that many of us at 17 years old were effectively forced to pick a field of study without knowing what we wanted to become. I was very lucky to feel sure I wanted to be a software engineer.</p>
+						<p class="responsive-font-size responsive-text" id="experience-bullets-header">My professional experience includes:</p>
+						<ul id="experience-bullets-list">
+							<li class="experience-bullets-item responsive-font-size responsive-text">Linux</li>
+							<li class="experience-bullets-item responsive-font-size responsive-text">Ruby on Rails</li>
+							<li class="experience-bullets-item responsive-font-size responsive-text">Java</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer mt-auto text-center" id="all-pages-footer">
+			<div class="container-fluid" id="footer-container">
+				<span class="responsive-font-size" id="footer-text">&copy; Copyright 2020 Steve Tice</span>
+			</div>
+		</footer>
 	</body>
 </html>

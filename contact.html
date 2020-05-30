@@ -5,39 +5,54 @@
 		<title>Contact Steve Tice</title>
 		<meta name="description" content="Web Site Portfolio - contact page">
 		<meta name="author" content="stic6021">
-		<link rel="stylesheet" href="assets/css/reset.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="assets/css/style.css">
 	</head>
-	<body>
-		<div class="all-pages-top-row">
-			<h1 id="all-pages-name-block">Steve Tice</h1>
-			<nav id="all-pages-nav">
-				<a class="all-pages-nav-link" id="about-link" href="./index.html" title="Home page">About</a>
-				<a class="all-pages-nav-link" id="portfolio-link" href="./portfolio.html" title="Portfolio page">Portfolio</a>
-				<a class="all-pages-nav-link" id="contact-link" href="./contact.html" title="Contact page">Contact</a>
-			</nav>
+	<body id="full-body-container">
+		<div class="container-fluid px-0" id="block-container">
+			<div class="row m-0 p-0 pl-md-3" id="top-block-row">
+				<div class="col-12 col-md-5 py-4 text-center" id="name-block-col">
+					<b id="name-block-text">Steve Tice</b>
+				</div>
+				<!-- This is a spacer column. -->
+				<div class="col-12 col-md-3"></div>
+				<div class="col-12 col-md-4" id="nav-links-col">
+					<div class="row py-4 py-md-5 text-center" id="nav-links-row">
+						<div class="col px-0 text-center">
+							<a class="gray-text responsive-font-size" id="about-link" href="./index.html" title="Home page">About</a>
+						</div>
+						<div class="col px-0 text-center">
+							<a class="border-left border-right gray-text px-2 px-sm-3 px-md-4 responsive-font-size" id="portfolio-link" href="./portfolio.html" title="Portfolio page">Portfolio</a>
+						</div>
+						<div class="col px-0 text-center">
+							<a class="gray-text responsive-font-size" id="contact-link" href="./contact.html" title="Contact page">Contact</a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-		<main class="main-content" id="contact-page-main-content">
-			<hr id="rule-at-top-of-main">
-			<article id="contact-page-article">
-				<h2 id="contact-me-heading">Contact</h2>
-				<hr id="rule-just-below-contact-me">
-				<label class="contact-form-label" for="contact-form-name-input">Name</label>
-				<br/>
-				<input type="text" id="contact-form-name-input" name="contact-form-name" required minlength="1">
-				<br/>
-				<label class="contact-form-label" for="contact-form-email-input">Email</label>
-				<br/>
-				<input type="text" id="contact-form-email-input" name="contact-form-email" required minlength="3">
-				<br/>
-				<label class="contact-form-label" for="contact-form-msg-input">Message</label>
-				<br/>
-				<textarea id="contact-form-msg-input" name="contact-form-msg" rows="11" cols="80"></textarea>
-				<br/>
-			</article>
-		</main>
-		<footer id="all-pages-footer">
-			<p id="all-pages-footer-text">Copyright (c) 2020 Steve Tice</p>
+		<div class="container-fluid pl-md-3" id="contact-form-outer-container">
+			<div class="container-fluid ml-md-0 pb-3 w-100" id="contact-form-inner-container">
+				<article id="contact-page-article">
+					<h2 class="pt-4" id="contact-me-heading"><b>Contact</b></h2>
+					<hr id="rule-below-contact-hr">
+					<label class="contact-form-label" for="contact-form-name-input">Name</label>
+					<input class="mb-3 px-2 w-100" type="text" id="contact-form-name-input" name="contact-form-name" required minlength="1">
+					<label class="contact-form-label" for="contact-form-email-input">Email</label>
+					<input class="mb-3 px-2 w-100" type="text" id="contact-form-email-input" name="contact-form-email" required minlength="3">
+					<label class="contact-form-label" for="contact-form-msg-input">Message</label>
+					<textarea class="mb-3 px-2 w-100" id="contact-form-msg-input" name="contact-form-msg" rows="8"></textarea>
+					<button class="btn btn-primary px-4" id="contact-form-submit-button">Submit</button>
+				</article>
+			</div>
+		</div>
+		<footer class="footer mt-auto text-center" id="all-pages-footer">
+			<div class="container-fluid" id="footer-container">
+				<span class="responsive-font-size" id="footer-text">&copy; Copyright 2020 Steve Tice</span>
+			</div>
 		</footer>
 	</body>
 </html>
